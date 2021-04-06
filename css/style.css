@@ -7,17 +7,19 @@
 .section {
   background: rgb(254, 172, 94); /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to right,
-    rgb(254, 172, 94,0.5),
-    rgb(199, 121, 208,0.5),
-    rgb(75, 192, 200,0.5)
-  ),url(https://s1.1zoom.me/big0/844/419851-Kycb.jpg); /* Chrome 10-25, Safari 5.1-6 */
+      to right,
+      rgb(254, 172, 94, 0.5),
+      rgb(199, 121, 208, 0.5),
+      rgb(75, 192, 200, 0.5)
+    ),
+    url(https://s1.1zoom.me/big0/844/419851-Kycb.jpg); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    rgb(254, 172, 94,0.5),
-    rgb(199, 121, 208,0.5),
-    rgb(75, 192, 200,0.5)
-  ),url(https://s1.1zoom.me/big0/844/419851-Kycb.jpg); 
+      to right,
+      rgb(254, 172, 94, 0.5),
+      rgb(199, 121, 208, 0.5),
+      rgb(75, 192, 200, 0.5)
+    ),
+    url(https://s1.1zoom.me/big0/844/419851-Kycb.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,29 +46,134 @@
   margin: 5px 0;
 }
 
-.bitbloq__link img{
-    border-radius: 30px;
-    max-width: 130px;
-    margin: 5px 0;
-    transition: all .3s ease-in;
-
+.bitbloq__link img {
+  border-radius: 30px;
+  max-width: 130px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in;
 }
-.bitbloq__link{
-    margin: 5px 0;
-    transition: all .5s ease-in;
-}
-
-.bitbloq__link:hover img{
-    transform: scale(1.1);
+.bitbloq__link {
+  margin: 5px 0;
+  transition: all 0.5s ease-in;
 }
 
-.diapositivas{
+.bitbloq__link:hover img {
+  transform: scale(1.1);
+}
+
+.diapositivas {
   width: 100%;
   height: 95vh;
   display: flex;
   justify-content: center !important;
 }
-.diapositivas iframe{
+.diapositivas iframe {
   width: 100%;
   height: 95vh;
+}
+
+.outer-loader {
+  width: auto;
+  height: 100vh;
+  border: dotted hsl(0, 0%, 67%) 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-loader-img {
+  text-align: center;
+  background: url(https://loading.io/spinners/comets/lg.comet-spinner.gif)
+    no-repeat center;
+  background-size: contain;
+  height: 40%;
+  width: 40%;
+}
+
+p {
+  position: relative;
+  top: 35%;
+  transform: translateY(-50%);
+  padding: 35px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: hsl(0, 64%, 34%);
+}
+.outer-loader {
+  width: 100%;
+  height: 100vh;
+  position: absolute !important;
+  z-index: 1000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-loader-img {
+  text-align: center;
+  background: url("https://loading.io/spinners/comets/lg.comet-spinner.gif")
+    no-repeat center;
+  background-size: contain;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: rgb(255, 0, 0);
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+}
+.loader {
+  text-indent: -9999em;
+  margin: 40% auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-animation-delay: 0.16s;
+  animation-delay: 0.16s;
+}
+.loader:after {
+  left: 1.5em;
+  -webkit-animation-delay: 0.32s;
+  animation-delay: 0.32s;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #fff;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #ffffff;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #fff;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #ffffff;
+    height: 5em;
+  }
 }

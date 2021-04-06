@@ -19,12 +19,18 @@
     <title>Boost Cap</title>
   </head>
   <body>
+    <!-- <div class="outer-loader">
+      <div class="inner-loader-img">
+        <div class="loader" id="loader">Loading...</div>
+      </div>
+    </div> -->
     <div id="fullpage">
       <div class="section">
         <video
           id="myVideo"
           autoplay
           controls
+          preload="metadata"
           style="width: 100%; height: 100vh; object-fit: cover"
         >
           <source
@@ -146,7 +152,7 @@
       </div>
       <div class="section diapositivas">
         <iframe
-        class=""
+          class=""
           src="https://onedrive.live.com/embed?cid=EEF9D3923943FA3C&amp;resid=EEF9D3923943FA3C%2127321&amp;authkey=ACC9Q_XzNFybIKY&amp;em=2&amp;wdAr=1.7777777777777777&amp;wdEaa=1"
           frameborder="0"
           >Esto es un documento de
@@ -162,6 +168,7 @@
       type="text/javascript"
       src="libs\fullPage.js\dist\fullpage.js"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/fullpage.js"></script>
     <script src="./js/script.js"></script>
   </body>
