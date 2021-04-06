@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+.section {
+  background: rgb(254, 172, 94); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(254, 172, 94,0.5),
+    rgb(199, 121, 208,0.5),
+    rgb(75, 192, 200,0.5)
+  ),url(https://s1.1zoom.me/big0/844/419851-Kycb.jpg); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    rgb(254, 172, 94,0.5),
+    rgb(199, 121, 208,0.5),
+    rgb(75, 192, 200,0.5)
+  ),url(https://s1.1zoom.me/big0/844/419851-Kycb.jpg); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container-explicacion {
+  text-align: center;
+}
+
+.audio img {
+  max-width: 200px;
+  margin: 0 10px;
+}
+
+.audio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.audio .texts audio {
+  margin: 5px 0;
+}
+
+.bitbloq__link img{
+    border-radius: 30px;
+    max-width: 130px;
+    margin: 5px 0;
+    transition: all .3s ease-in;
+
+}
+.bitbloq__link{
+    margin: 5px 0;
+    transition: all .5s ease-in;
+}
+
+.bitbloq__link:hover img{
+    transform: scale(1.1);
+}
