@@ -2,10 +2,10 @@ var myFullpage = new fullpage("#fullpage", {
   //Navigation
   menu: "#menu",
   lockAnchors: false,
-  anchors: ["Comercial", "Explicaciondelproyecto"],
+  anchors: ["Comercial", "Explicaciondelproyecto","Diapositivas"],
   navigation: true,
   navigationPosition: "right",
-  navigationTooltips: ["Comercial", "Explicacion del proyecto"],
+  navigationTooltips: ["Comercial", "Explicacion del proyecto","Diapositivas"],
   showActiveTooltip: false,
   slidesNavigation: false,
   slidesNavPosition: "bottom",
@@ -26,7 +26,7 @@ var myFullpage = new fullpage("#fullpage", {
   continuousHorizontal: false,
   scrollHorizontally: false,
   interlockedSlides: false,
-  dragAndMove: false,
+  dragAndMove: true,
   offsetSections: false,
   resetSliders: false,
   fadingEffect: false,
@@ -61,7 +61,7 @@ var myFullpage = new fullpage("#fullpage", {
   sectionSelector: ".section",
   slideSelector: ".slide",
 
-//   lazyLoading: true
+  lazyLoading: true
 
   //   //events
   //   onLeave: function (origin, destination, direction) {},
